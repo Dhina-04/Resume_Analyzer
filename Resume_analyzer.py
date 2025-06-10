@@ -10,9 +10,9 @@ import uuid
 from pathlib import Path
 
 # Configure Gemini API
-os.environ["GEMINI_API_KEY"] = st.secrets.get("GEMINI_API_KEY", "your-api-key-here")
+os.environ["GEMINI_API_KEY"] = st.secrets.get("GEMINI_API_KEY", "AIzaSyD098b2y21Iv-PLXGohUvWt-UNYqwlLshM")
 genai.configure(api_key=os.environ["GEMINI_API_KEY"])
-MODEL = "gemini-2.0-flash-001"
+MODEL = "gemini-2.0-flash"
 
 # Function to extract text from PDF
 def extract_text_from_pdf(file):
